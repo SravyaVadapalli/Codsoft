@@ -1,0 +1,231 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(33, 226, 91);
+	color: black;
+	font-family: "Fira Sans", sans-serif;
+	background-color: white;
+}
+
+nav {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 5%;
+	background-color: black;
+}
+
+nav .heading {
+	font-size: 30px;
+	font-weight: 700;
+	color: white;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav ul li {
+	padding: 8px 15px;
+	border-radius: 10px;
+	transition: 0.2s ease-in;
+}
+
+nav ul li a {
+	color: black;
+	font-size: 20px;
+	font-weight: 500;
+	text-decoration: none;
+	color: white;
+}
+
+nav ul li:hover {
+	background-color: rgb(79, 128, 90);
+}
+
+nav ul li a:hover {
+	color: white;
+}
+
+nav .sideMenuButton {
+	font-size: 30px;
+	font-weight: bolder;
+	cursor: pointer;
+	display: none;
+}
+
+.sideNavigationBar {
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0%;
+	background-color: rgb(115, 218, 234);
+	overflow-x: hidden;
+	transition: 0.3s ease-in;
+	padding-top: 60px;
+	display: none;
+}
+
+.sideNavigationBar a {
+	padding: 8px 8px 8px 40px;
+	display: block;
+	font-size: 25px;
+	font-weight: 500;
+	color: #d1d1d1;
+	transition: 0.3s;
+	text-decoration: none;
+}
+
+.sideNavigationBar a button {
+	padding: 10px 20px;
+	border-radius: 10px;
+	color: rgb(0, 43, 128);
+	font-size: 16px;
+	border-style: none;
+	font-weight: 700;
+}
+
+.sideNavigationBar a:hover {
+	color: white;
+}
+
+.sideNavigationBar .closeButton {
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 20px;
+	margin-left: 50px;
+}
+
+.home {
+	background-color: rgb(33, 226, 91);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.home .side1 {
+	padding-left: 100px;
+}
+
+.side1 h1 {
+	color: white;
+    width: 50vw;
+    text-align: left;
+}
+.side2 {
+    padding-right: 40px;
+}
+.side1 button {
+	width: 200px;
+	padding: 12px 20px;
+	border-radius: 20px;
+	border-style: none;
+	color: black;
+	font-size: 17px;
+	font-weight: 600;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.about .boxes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.about .boxes .box {
+	margin: 10px 20px;
+	max-width: calc(100% / 3 - 50px);
+	text-align: center;
+	border-radius: 12px;
+	padding: 30px 10px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+	cursor: default;
+}
+.title {
+	text-align: center;
+	padding: 3%;
+	font-weight: bolder;
+}
+
+.contactMenu {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.input2 {
+	margin-top: 10;
+}
+
+.label1 {
+	font-size: 18px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-weight: bolder;
+}
+
+.contactMenu .input1 input {
+	border-radius: 13px;
+	padding: 6px;
+}
+
+.input2 input {
+	border-color: rgb(252, 244, 244);
+	width: 400px;
+}
+
+.button {
+	margin-top: 12px;
+	margin-left: 5px;
+}
+
+.button button {
+	width: 162px;
+	height: 35px;
+	border-radius: 12px;
+	border-color: transparent;
+}
+
+.button button:hover {
+	background-color: #4b81ad;
+}
+
+button {
+	width: 162px;
+	height: 35px;
+	border-radius: 12px;
+	border-color: transparent;
+}
+
+button:hover {
+	background-color: #46e75b;
+}
+
+.rightside1 {
+	display: flex;
+	flex-direction: column;
+	margin-left: 300px;
+}
+.text {
+	text-align: center;
+	padding: 100px;
+	font-weight: bolder;
+	background-color: rgb(33, 226, 91);
+	font-size: 18px;
+}
+.download {
+	text-align: center;
+	padding: 100px;
+	font-weight: bolder;
+	font-size: 18px;
+}
+

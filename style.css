@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
+body {
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:cadetblue;
+}
+.navbar-left{
+    color: white;
+    padding-left: 20px;
+}
+.navbar-right {
+    color: white;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.a-element {
+    color: white;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.home {
+    background-color: #04364a;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+}
+.home-left {
+    color: white;
+    width: 50vw;
+    text-align: left;
+    padding-left: 100px;
+}
+.home-right {
+    width: 50vw;
+    padding-left: 100px;
+    img {
+        border: 5px solid white;
+        border-radius: 50%;
+        box-shadow: 10px 10px 50px white;
+    }
+}
+.h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+}
+.p {
+    font-family: "Encode Sans", sans-serif;
+    font-size: 20px;
+}
+.skills {
+    width: 100px;
+    max-width: 600px;
+    padding: 0 20px;
+}
+.S-1 {
+    font-family: "Anta", sans-serif;
+    letter-spacing: 1pmx;
+}
+.skill-1 {
+    font-size: 10px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.skills-part {
+    width:500%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+.skill-bar {
+    height: 14px;    
+    border-radius: 3px;
+}
+.percent {
+    height: 12px;
+    background: #88badd;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+.percent::before {
+    content:attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #3e92cc;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+.percent::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgb(238, 211, 215);
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+@keyframes fillBars {
+    from{
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+.certify {
+    width: 100px;
+    max-width: 600px;
+    padding: 0 20px;
+}
+.C-1 {
+    padding-top: 40%;
+    font-family: "Anta", sans-serif;
+    letter-spacing: 1pmx;
+}
+.certify-section {
+    display: flex;
+    flex-direction: row;
+}
+.C-img {
+    width: 290px;
+    height: 300px;
+    border: 2px solid hsl(205, 43%, 63%);
+    border-radius: 5px;
+    margin: 10px;
+}
+.R-part {
+    font-family: "Anta", sans-serif;
+    letter-spacing: 1pmx;
+    padding-top: 40px;
+}
+.contact {
+    text-align: center;
+    padding: 50px;
+}
+.info {
+    font-family: "Encode Sans", sans-serif;
+    font-size: 15px;
+}
+.icon-img {
+    height: 30px;
+    padding: 4px;
+}
+.resume
+ {
+    padding: 0 20px;
+}
